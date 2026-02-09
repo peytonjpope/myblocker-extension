@@ -1,0 +1,19 @@
+/* Template CSS */
+
+body {
+    color: white;
+    background: linear-gradient(180deg, rgb(0, 28, 49), rgb(0, 21, 36));
+
+    /* Center content */
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    height: 100vh;           /* full viewport height */
+    margin: 0;               /* remove default margin */
+  }
+
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
