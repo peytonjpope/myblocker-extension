@@ -13,4 +13,6 @@
 - Vanilla JavaScript + Chrome Extension APIs.
 - Uses `chrome.storage.local` for persistent memory
 
+---
+
 ![Screenshot Preview](/images/preview.jpg)
