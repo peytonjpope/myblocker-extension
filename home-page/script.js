@@ -14,7 +14,7 @@ chrome.storage.local.get(["blockedSites"], (result) => {
 });
 
 function renderList() {
-    fieldset.innerHTML = "<legend>List of Sites</legend>";
+    fieldset.innerHTML = '';
 
     blockedSites.forEach((site, index) => {
         const div = document.createElement("div");

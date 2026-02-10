@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyBlock</title>
+  <title>MyBlocker</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Link to external CSS file-->
@@ -10,19 +10,18 @@
 <body>
   <div id="container">
   <div class="rmid">
-    <h1>MyBlocks</h1>
+    <h1>🌐 MyBlocker</h1>
   </div>
 
+  <legend class="subheader" id="add-site">Add Site</legend>
   <form id="new-site-form">
-    <legend>Add Site</legend>
       <input id="site-input" type="text" name="text" />
-      <input type="submit" value="Add" />
+      <input type="submit" id="add-button" value="Add" />
   </form>
 
+  <legend class="subheader" id="site-list">Blocked Sites</legend>
   <div id="list-container">
     <fieldset id="sites-fieldset">
-      <legend>List of Sites</legend>
-    
     </fieldset>    
   </div>
 

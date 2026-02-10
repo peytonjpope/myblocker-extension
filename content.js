@@ -11,6 +11,6 @@ chrome.storage.local.get(["blockedSites"], (result) => {
     );
     
     if (isBlocked) {
-        window.location.href = chrome.runtime.getURL("blocked.html");
+        window.location.href = chrome.runtime.getURL("blocked-page/blocked.html");
     }
 });

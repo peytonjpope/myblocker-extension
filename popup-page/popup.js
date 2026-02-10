@@ -12,7 +12,9 @@ document.getElementById("add").addEventListener("click", () => {
             if (!blockedSites.includes(hostname)) {
                 blockedSites.push(hostname);
                 chrome.storage.local.set({blockedSites: blockedSites}, () => {
-                    alert(`${hostname} added to blocked list.`);
+                    chrome.tabs.reload(currentTab.id, () => {
+                        window.close();
+                    });
                 });
             } else {
                 alert("Site already blocked.");
@@ -23,6 +25,6 @@ document.getElementById("add").addEventListener("click", () => {
 
 document.getElementById("edit").addEventListener("click", () => {
     chrome.tabs.create({
-        url: chrome.runtime.getURL("index.html")
+        url: chrome.runtime.getURL("home-page/index.html")
     });
 });
